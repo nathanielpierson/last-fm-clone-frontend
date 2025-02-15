@@ -1,6 +1,7 @@
-import axios from "axios"
-import { SongsIndex } from "./SongsIndex"
-import { useState, useEffect } from 'react'
+import axios from "axios";
+import { SongsIndex } from "./SongsIndex";
+import { useState, useEffect } from "react";
+import { Modal } from "./Modal";
 
 export function SongsPage () {
 const [songs, setSongs] = useState([]);
@@ -18,10 +19,15 @@ const handleIndex = () => {
 
 useEffect(handleIndex, []);
 
+
 return (
   <div>
     <p>last.fm clone app</p>
     <SongsIndex songs={songs} onShow={handleIndex} />
+
+<Modal show={false}>
+<p>TEST</p>
+</Modal>
   </div>
 );
 }
