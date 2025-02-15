@@ -1,17 +1,27 @@
 import axios from "axios"
+import { SongsIndex } from "./SongsIndex"
+import { useState, useEffect } from 'react'
 
 export function SongsPage () {
-var setSongs = [];
+const [songs, setSongs] = useState([]);
 const handleIndex = () => {
   console.log('handleIndex called');
   axios.get('http://localhost:3000/songs.json')
   .then(function (response) {
-    console.log('inside the .then')
+    setSongs(response.data);
+    console.log('inside the .then');
     console.log(response.data);
     setSongs(response.data);
   })
   console.log('after the .then')
 }
 
-<button onClick={handleIndex}>Get data from rails</button>
+useEffect(handleIndex, []);
+
+return (
+  <div>
+    <p>last.fm clone app</p>
+    <SongsIndex songs={songs} onShow={handleIndex} />
+  </div>
+);
 }
