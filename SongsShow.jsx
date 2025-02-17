@@ -1,0 +1,1 @@
+// I am not good enough at React to make a functional Show page or modal rn

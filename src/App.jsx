@@ -1,6 +1,8 @@
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom"; 
 import './App.css'
 import { SongsPage } from './SongsPage'
 import { Header } from './Header'
+import { AlbumsPage } from './AlbumsPage'
 // import { useState } from 'react'
 
 function App() {
@@ -9,6 +11,7 @@ function App() {
     <div>
       <Header />
       <SongsPage />
+      <AlbumsPage />
       <p>h</p>
     </div>
   )

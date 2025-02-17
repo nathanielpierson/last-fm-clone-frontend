@@ -8,11 +8,11 @@ export function SongsIndex ({songs, onShow}) {
       {songs.map(song => (
       <div key={song.id} className="col-md-4">
         <div className="card">
-          <h5>{song.title}</h5>
-          <h5>{song.artist_id}</h5>
-          <h5>{song.album}</h5>
-          <h5>{song.year}</h5>
-          <h5>{song.genre}</h5>
+          <p>{song.title}</p>
+          <p>{song.artist_id}</p>
+          <p>{song.album}</p>
+          <p>{song.year}</p>
+          <p>{song.genre}</p>
         </div>
       </div>
    ))}
