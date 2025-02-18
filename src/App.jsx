@@ -3,6 +3,7 @@ import './App.css'
 import { SongsPage } from './SongsPage'
 import { Header } from './Header'
 import { AlbumsPage } from './AlbumsPage'
+import { ModalShow } from './ModalShow'
 // import { useState } from 'react'
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
   return (
     <div>
       <Header />
+      <ModalShow />
       <SongsPage />
       <AlbumsPage />
       <p>h</p>

@@ -1,7 +1,7 @@
 import axios from "axios";
 import { AlbumsIndex } from "./AlbumsIndex";
 import { useState, useEffect } from "react";
-import { Modal } from "./Modal";
+import { ModalShow } from "./ModalShow";
 
 export function AlbumsPage ( ) {
   const [albums, setAlbums] = useState([]);
@@ -21,6 +21,9 @@ export function AlbumsPage ( ) {
     <div>
       <p>last.fm clone app</p>
       <AlbumsIndex albums={albums} onShow={handleIndex} />
+      <p>placeholder modal</p>
+      <ModalShow />
+      <p>placeholder modal</p>
       </div>
   )
 }
