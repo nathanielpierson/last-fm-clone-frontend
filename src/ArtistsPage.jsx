@@ -1,4 +1,3 @@
-import { AlbumsIndex } from "./AlbumsIndex"
 import { useState, useEffect } from "react"
 import axios from "axios";
 
@@ -13,7 +12,4 @@ import axios from "axios";
       })
     }
     useEffect(handleIndex, []);
-    return (
-      <AlbumsIndex artists={artists}/>
-    )
 }
