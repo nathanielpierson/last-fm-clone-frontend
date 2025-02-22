@@ -1,8 +1,9 @@
-import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom"; 
+// import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom"; 
 import './App.css'
-import { SongsPage } from './SongsPage'
 import { Header } from './Header'
+import { SongsPage } from './SongsPage'
 import { AlbumsPage } from './AlbumsPage'
+import { ArtistsPage } from './ArtistsPage'
 import { ModalShow } from './ModalShow'
 // import { useState } from 'react'
 
