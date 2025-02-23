@@ -7,7 +7,7 @@ export function AlbumsIndex ({albums, artists}) {
       {albums.map(album => (
       <div key={album.id} >
         <div className="card">
-        <img src={album.img_url} alt="..." height="200px" />
+        <img src={album.img_url} alt="..." height="250px" width="250px"/>
           <h5>album: {album.title}</h5>
           <h5>by {album.artist}</h5>
           <h5>year: {album.year}</h5>

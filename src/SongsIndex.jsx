@@ -9,7 +9,7 @@ export function SongsIndex ({songs, onShow}) {
       <div key={song.id}>
         <div className="card">
           <p>{song.title}</p>
-          <p>{song.artist_id}</p>
+          <p>{song.artist}</p>
           <p>{song.album}</p>
           <p>{song.year}</p>
           <p>{song.genre}</p>
