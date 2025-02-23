@@ -19,12 +19,13 @@ const router = createBrowserRouter([
       {
         path: "/",
       },
+      
       {
-        path: "/albums",
+        path: "/home/albums",
         element: <AlbumsPage />
       },
       {
-        path: "/songs",
+        path: "/home/songs",
         element: <SongsPage />
       }
       // {

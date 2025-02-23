@@ -1,4 +1,4 @@
-export function SongsIndex ({songs, onShow}) {
+export function SongsIndex ({songs}) {
   console.log(songs);
 
   return (
