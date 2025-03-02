@@ -1,22 +1,29 @@
-export function SongsIndex ({songs}) {
+export function SongsIndex({ songs, albums }) {
   console.log(songs);
+  console.log(albums);
 
   return (
-  <div id="songs-index">
-    <h1>All songs</h1>
-    <div>
-      {songs.map(song => (
-      <div key={song.id}>
-        <div className="card">
-          <p>{song.title}</p>
-          <p>{song.artist}</p>
-          <p>{song.album}</p>
-          <p>{song.year}</p>
-          <p>{song.genre}</p>
-        </div>
+    <div id="songs-index">
+      <h1>All songs</h1>
+      <div>
+        {songs?.map((song) => (
+          <div key={song.id}>
+            <div className="card">
+              <p>{song.title}</p>
+              <p>{song.artist}</p>
+              <p>{song.album}</p>
+              <p>{song.year}</p>
+              <p>{song.genre}</p>
+            </div>
+          </div>
+        ))}
       </div>
-   ))}
     </div>
-  </div>
   );
 }
+
+// {albums?.map((album) => (
+//   <div key={album.id}>
+//     <p>{album.url}</p>
+//   </div>
+// ))}

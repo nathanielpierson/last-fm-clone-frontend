@@ -1,10 +1,10 @@
-import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom"; 
-import './App.css'
-import { Header } from './Header'
-import { SongsPage } from './SongsPage'
-import { AlbumsPage } from './AlbumsPage'
-import { ArtistsPage } from './ArtistsPage'
-import { ModalShow } from './ModalShow'
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import "./App.css";
+import { Header } from "./Header";
+import { SongsPage } from "./SongsPage";
+import { AlbumsPage } from "./AlbumsPage";
+import { ArtistsPage } from "./ArtistsPage";
+import { ModalShow } from "./ModalShow";
 // import { useState } from 'react'
 
 const router = createBrowserRouter([
@@ -17,20 +17,20 @@ const router = createBrowserRouter([
     ),
     children: [
       {
-        path: "/",
+        path: "/home",
       },
       {
         path: "/home/artists",
-        element: <ArtistsPage />
+        element: <ArtistsPage />,
       },
       {
         path: "/home/albums",
-        element: <AlbumsPage />
+        element: <AlbumsPage />,
       },
       {
         path: "/home/songs",
-        element: <SongsPage />
-      }
+        element: <SongsPage />,
+      },
       // {
       //   path: "/signup",
       //   element: <SignupPage />,
@@ -44,13 +44,11 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-
   return (
     <div>
-      <RouterProvider router={router} />;
-      <p>h</p>
+      <RouterProvider router={router} />;<p>h</p>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
