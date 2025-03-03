@@ -1,4 +1,5 @@
 import { ArtistsIndex } from "./ArtistsIndex";
+import { ArtistsNew } from "./ArtistsNew";
 import { useState, useEffect } from "react";
 
 import axios from "axios";
@@ -15,5 +16,10 @@ export function ArtistsPage() {
       });
   };
   useEffect(handleIndex, []);
-  return <ArtistsIndex artists={artists} />;
+  return (
+    <div>
+      <ArtistsIndex artists={artists} />
+      <ArtistsNew />
+    </div>
+  );
 }
