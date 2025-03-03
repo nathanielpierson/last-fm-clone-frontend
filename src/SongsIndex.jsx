@@ -8,7 +8,7 @@ export function SongsIndex({ songs, albums }) {
       <div>
         {songs?.map((song) => (
           <div key={song.id}>
-            <div className="card">
+            <div>
               <p>{song.title}</p>
               <p>{song.artist}</p>
               <p>{song.album}</p>
