@@ -21,9 +21,3 @@ export function SongsIndex({ songs, albums }) {
     </div>
   );
 }
-
-// {albums?.map((album) => (
-//   <div key={album.id}>
-//     <p>{album.url}</p>
-//   </div>
-// ))}

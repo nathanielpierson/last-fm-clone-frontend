@@ -4,9 +4,6 @@ import { Header } from "./Header";
 import { SongsPage } from "./SongsPage";
 import { AlbumsPage } from "./AlbumsPage";
 import { ArtistsPage } from "./ArtistsPage";
-import { ArtistsNew } from "./ArtistsNew";
-import { ModalShow } from "./ModalShow";
-// import { useState } from 'react'
 
 const router = createBrowserRouter([
   {
@@ -32,14 +29,6 @@ const router = createBrowserRouter([
         path: "/home/songs",
         element: <SongsPage />,
       },
-      // {
-      //   path: "/signup",
-      //   element: <SignupPage />,
-      // },
-      // {
-      //   path: "/login",
-      //   element: <LoginPage />,
-      // },
     ],
   },
 ]);

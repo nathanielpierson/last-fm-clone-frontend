@@ -1,5 +1,6 @@
 import axios from "axios";
 import { SongsIndex } from "./SongsIndex";
+import { SongsNew } from "./SongsNew";
 import { useState, useEffect } from "react";
 
 export function SongsPage() {
@@ -23,6 +24,7 @@ export function SongsPage() {
     <div>
       <p>last.fm clone app</p>
       <SongsIndex songs={songs} onShow={handleIndex} />
+      <SongsNew />
     </div>
   );
 }
